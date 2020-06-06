@@ -1,16 +1,14 @@
 <?php
 namespace thipages\string;
 class SPattern {
-    public static function parse($s) {
+    public static function map($s) {
         if ($s==null) {
-            return new SPValue(
-                0, []
-            );
+            return ["","_"=>0];
         } else {
+            $map=[];
             $chars = str_split($s);
             $count = count($chars);
             $i=0;
-            $map=[];
             $iCurrent=-1;
             $current='';
             while ($i<$count) {
@@ -28,8 +26,21 @@ class SPattern {
                 }
                 $i++;
             }
-            //print_r($map);
-            return new SPValue($count, $map);
+            $map['_']=$count;
         }
+        return $map;
+    }
+    public static function normalize($s) {
+        $map=self::map($s);
+        $output=[0,'',''];
+        if ($s!=null) {
+            $output[0] = $map['_'];
+            unset($map['_']);
+            foreach ($map as $item) {
+                $output[1] .= $item[0];
+                $output[2] .= join($item);
+            }
+        }
+        return $output;
     }
 }

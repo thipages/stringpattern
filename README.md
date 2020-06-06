@@ -3,11 +3,12 @@ Simple String Pattern Recognition
 
 ## Usage
 ```php
-$p=SPattern::parse ($string)
-$p->sequence
-$p->sequence_occ
+$norm=SPattern::normalize ($string)
+// $norm[0] gives the length
+// $norm[1] gives a sequence
+// $norm[2] gives a sequence with occurrence
 ```
-sequence syntax uses
+sequence syntax is
 - N for numeric
 - A for alphabet
 - the character for any non alphanumeric character

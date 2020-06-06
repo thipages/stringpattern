@@ -1,6 +1,6 @@
 {
   "name": "thipages/stringpattern",
-  "version": "v0.1.0",
+  "version": "v0.1.1",
   "description": "Generic String Pattern Recognition",
   "type": "library",
   "keywords" : ["php", "recognition", "string", "analysis", "pattern"],
@@ -15,7 +15,7 @@
   "autoload": {
     "psr-0": {"thipages\\string\\": "src/"}
   },
-  "require": {
-    "thipages/quicktests": "^0.3.0"
+  "require-dev": {
+    "thipages/quicktests": "*"
   }
 }

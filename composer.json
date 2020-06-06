@@ -1,0 +1,21 @@
+{
+  "name": "thipages/stringpattern",
+  "version": "v0.0.1",
+  "description": "Generic String Pattern Recognition",
+  "type": "library",
+  "keywords" : ["php", "recognition", "string", "analysis", "pattern"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Thierry PAGES",
+      "email": "thipages@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-0": {"thipages\\string\\": "src/"}
+  },
+  "require": {
+    "thipages/quicktests": "^0.3.0"
+  }
+}

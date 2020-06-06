@@ -8,7 +8,7 @@ $p->sequence
 $p->sequence_occ
 ```
 sequence syntax uses
-- D for digits
+- N for numeric
 - A for alphabet
 - the character for any non alphanumeric character
 
@@ -16,9 +16,9 @@ sequence syntax uses
 
 | $string       | sequence_occ  | sequence  |
 | :-----------: | :-----------: | :-------: |
-| 123           | D3            | D         |
-| 123.1         | D3.1D1        | D.D       |
-| 12,1          | D2,1D1        | D,D       |
-| T23@mail.com  | A1D2@1A4.1A3  | AD@A.A    |
+| 123           | N3            | N         |
+| 123.1         | N3.1N1        | N.N       |
+| 12,1          | N2,1N1        | N,N       |
+| T23@mail.com  | A1N2@1A4.1A3  | AN@A.A    |
 
 

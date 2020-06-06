@@ -15,7 +15,7 @@ class SPattern {
             $current='';
             while ($i<$count) {
                 $next = ctype_digit($chars[$i])
-                    ? "D" : (
+                    ? "N" : (
                     ctype_alpha($chars[$i])
                         ? "A" : $chars[$i]
                     );

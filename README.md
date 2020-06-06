@@ -9,7 +9,7 @@ Simple String Pattern Recognition
 $norm=SPattern::normalize ($string)
 // $norm[0] gives the length
 // $norm[1] gives a sequence
-// $norm[2] gives a sequence with occurrence
+// $norm[2] gives a sequence with occurrence (sequence_occ)
 ```
 sequence syntax is
 - N for numeric
@@ -18,11 +18,11 @@ sequence syntax is
 
 ## Examples
 
-| $string       | sequence_occ  | sequence  |
-| :-----------: | :-----------: | :-------: |
-| 123           | N3            | N         |
-| 123.1         | N3.1N1        | N.N       |
-| 12,1          | N2,1N1        | N,N       |
-| T23@mail.com  | A1N2@1A4.1A3  | AN@A.A    |
+| input         | sequence  | sequence_occ  |
+| :-----------: | :-------: | :-----------: |
+| 123           | N         | N3            |
+| 123.1         | N.N       | N3.1N1        |
+| 12,1          | N,N       | N2,1N1        |
+| T23@mail.com  | AN@A.A    | A1N2@1A4.1A3  |
 
 

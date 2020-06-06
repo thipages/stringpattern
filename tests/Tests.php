@@ -9,10 +9,10 @@ class Tests {
             'T23@mail.com'
         ];
         $r=[
-            'N3',
-            'N3.1N1',
-            'N2,1N1',
-            'A1N2@1A4.1A3'
+            'D3',
+            'D3.1D1',
+            'D2,1D1',
+            'A1D2@1A4.1A3'
         ];
         return array_map(
             function($v, $i) use($r,$t) {

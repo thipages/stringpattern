@@ -1,5 +1,5 @@
 # stringpattern
-Generic String Pattern Recognition
+Simple String Pattern Recognition
 
 ## Usage
 ```php

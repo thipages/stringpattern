@@ -1,6 +1,9 @@
 # stringpattern
 Simple String Pattern Recognition
 
+## Installation
+    composer require thipages\stringpattern
+    
 ## Usage
 ```php
 $norm=SPattern::normalize ($string)

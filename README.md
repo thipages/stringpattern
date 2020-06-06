@@ -25,4 +25,7 @@ sequence syntax is
 | 12,1          | N,N       | N2,1N1        |
 | T23@mail.com  | AN@A.A    | A1N2@1A4.1A3  |
 
+## Use Case
+- Find/Check database column data format
+
 

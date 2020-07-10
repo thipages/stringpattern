@@ -26,6 +26,6 @@ sequence syntax is
 | T23@mail.com  | AN@A.A    | A1N2@1A4.1A3  |
 
 ## Use Case
-Find/Check database column data format
+Find/Check data source column format
 
 

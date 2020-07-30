@@ -8,7 +8,8 @@ class Tests {
             '123',
             '123.1',
             '12,1',
-            'T23@mail.com'
+            'T23@mail.com',
+            'rémanent'
         ];
         $r=[
             '',
@@ -16,7 +17,8 @@ class Tests {
             'N3',
             'N3.1N1',
             'N2,1N1',
-            'A1N2@1A4.1A3'
+            'A1N2@1A4.1A3',
+            'A2é1A6'
         ];
         return array_map(
             function($v, $i) use($r,$t) {

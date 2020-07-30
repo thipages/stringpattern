@@ -1,12 +1,23 @@
 <?php
 namespace thipages\string;
 class SPattern {
+
+
+    public static function utf8Split($str)
+    {
+        $len = mb_strlen($str, 'UTF-8');
+        $result = [];
+        for ($i = 0; $i < $len; $i++) {
+            $result[] = mb_substr($str, $i, 1, 'UTF-8');
+        }
+        return $result;
+    }
     public static function map($s) {
         if ($s==null) {
             return ["","_"=>0];
         } else {
             $map=[];
-            $chars = str_split($s);
+            $chars = self::utf8Split($s);
             $count = count($chars);
             $i=0;
             $iCurrent=-1;

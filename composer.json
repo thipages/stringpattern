@@ -16,5 +16,9 @@
     "psr-0": {"thipages\\string\\": "src/"}
   },
   "require-dev": {
+  },
+  "require": {
+    "ext-mbstring": "*",
+    "ext-ctype": "*"
   }
 }

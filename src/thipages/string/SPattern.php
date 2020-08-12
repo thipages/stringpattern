@@ -1,10 +1,9 @@
 <?php
 namespace thipages\string;
+// todo : add a new accentuated chars segmentation
+// https://stackoverflow.com/questions/2133758/how-do-i-match-accented-characters-with-php-preg
 class SPattern {
-
-
-    public static function utf8Split($str)
-    {
+    public static function utf8Split($str) {
         $len = mb_strlen($str, 'UTF-8');
         $result = [];
         for ($i = 0; $i < $len; $i++) {

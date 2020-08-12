@@ -1,8 +1,5 @@
 <?php
 namespace thipages\string;
-// todo : add a new accentuated chars segmentation
-// https://stackoverflow.com/questions/2133758/how-do-i-match-accented-characters-with-php-preg
-// $s=preg_replace("/\p{L}/u","a","_béévv1");
 class SPattern {
     public static function utf8Split($str) {
         $len = mb_strlen($str, 'UTF-8');

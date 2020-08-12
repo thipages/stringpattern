@@ -1,9 +1,9 @@
 {
   "name": "thipages/stringpattern",
-  "version": "v0.3.0",
+  "version": "v0.4.0",
   "description": "Simple String Pattern Recognition",
   "type": "library",
-  "keywords" : ["php", "recognition", "string", "analysis", "pattern"],
+  "keywords" : ["php", "recognition", "string", "analysis", "pattern","accent"],
   "license": "MIT",
   "authors": [
     {

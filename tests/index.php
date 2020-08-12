@@ -1,6 +1,10 @@
 <?php
+
+use thipages\string\SPattern;
+
 include('../src/thipages/string/SPattern.php');
-$dataSet= [
+$sets=[];
+$sets[0]= [
         [
         '',
         null,
@@ -20,9 +24,16 @@ $dataSet= [
         'A1é1A6'
     ]
 ];
+$sets[1] = (new ArrayObject($sets[0]))->getArrayCopy();
+array_pop($sets[1][1]);
+$sets[1][1][]='A8';
 $res=[];
-for ($i=0;$i<count($dataSet[0]);$i++) {
-   $res[]=\thipages\string\SPattern::normalize($dataSet[0][$i])[2]===$dataSet[1][$i]?'ok':'nok'; 
+$accent=false;
+foreach ($sets as $set) {
+    for ($i=0;$i<count($set[0]);$i++) {
+        $res[]= SPattern::normalize($set[0][$i],$accent)[2]===$set[1][$i]?'ok':'nok';
+    }  
+    $accent=true;
 }
 print_r($res);
 

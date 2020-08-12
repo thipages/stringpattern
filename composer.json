@@ -18,7 +18,6 @@
   "require-dev": {
   },
   "require": {
-    "ext-mbstring": "*",
-    "ext-ctype": "*"
+    "ext-mbstring": "*"
   }
 }
